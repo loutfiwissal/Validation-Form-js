@@ -1,2 +1,2 @@
 # Validation-Form
-This project is a simple HTML form for student registration that includes form validation and dynamically adds entries to a table upon submission
+This project is a simple HTML form for student registration that includes form validation and dynamically adds entries to a table upon submission . The form collects basic information such as full name, email, subject name, grades for two controls, and a coefficient for the subject. The project uses HTML, CSS, and JavaScript for its implementation. Below is a detailed description of the code.
