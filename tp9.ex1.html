@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        label{display:inline-block;width:200px;}
+        #l1{
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="Form">
+        <h1>Formulaire d'inscription</h1>
+        <div style="display: flex;">
+            <label>Nom complet :</label>
+            <p id="nomError"></p>
+        </div>
+        <input type="text" id="nom" onblur="f1()"required><br><br>
+        <div style="display: flex;">
+            <label>Email :</label>
+            <p id="emailError"></p>
+        </div>
+        <input type="email" id="email" onblur="f2()" required><br><br>
+        
+        <div style="display: flex;">
+            <label>Nom de matiere:</label>
+            <p id="MError"></p>
+        </div>
+        <input type="text" id="matiere" onblur="f3()" required><br><br>
+        
+        <div style="display: flex;">
+            <label>Note du controle 1:</label>
+            <p id="nb1Error"></p>
+        </div>
+        <input type="number" id="n1" onblur="f4()" required><br><br>
+        
+        <div style="display: flex;">
+            <label>Note du controle 2:</label>
+            <p id="nb2Error"></p>
+        </div>
+        <input type="number" id="n2" onblur="f5()" required><br><br>
+        
+        <div style="display: flex;">
+            <label>Coefficient de la matiere:</label>
+            <p id="Coef"></p>
+        </div>
+        <input type="number" id="coefficient" onblur="f6()"  required><br><br>
+        
+        <!-- <input type="submit" onclick="ajoute()" name="" id=""> -->
+    </form>
+    <button onclick="ajoute()" type="submit">Ajouter une ligne</button><br><br>
+    <h2>Liste des etudiants</h2>
+    <table id="matable">
+        <tr id="l1">
+            <th>Nom complet</th>
+            <th>Email</th>
+            <th>Nom de la matiere</th>
+            <th>Note controle 1</th>
+            <th>Note controle 2</th>
+            <th>Coefficient</th>
+            <th>Moyenne</th>
+
+        </tr>
+        <!-- <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr> -->
+    </table>
+    <script src="form.js"></script>
+</body>
+</html>
